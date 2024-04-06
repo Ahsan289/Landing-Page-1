@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+@font-face {
+    font-family: Roboto;
+    src: url(./Assets/Fonts/Roboto-Regular.ttf);
+}
+body{
+    background: linear-gradient(to right, #ffefba 0%, #ffffff 100%);
+}
+a{
+    color: #000;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+.header .logo img{
+    width: 100px;
+    height: 51px;
+    object-fit: contain;
+    margin-left: 21px;
+}
+.navigation .desktop-nav ul{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-right: 21px;
+}
+.get-started{
+    /* border: 1px solid; */
+    padding: 5px 26px;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #ffe259 0%, #ffa751 100%);
+}
+.get-started a{
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 400;
+
+
+}
+.mobile-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.ham-color{
+    color: #000;
+    font-size: 32px;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10em;
+    margin-left: 5em;
+}
+.heading h1{
+    font-size: 325%;
+    /* text-align: center; */
+
+
+}
+.img img{
+    width: 520px;
+}
+.img2 img{
+    display: none;
+}
+
+.content{
+    margin-top: -13em;
+    margin-left: 5em;
+    width: 555px;
+    height: 56px;
+    /* text-align: center; */
+}
+.btn{
+    margin-left: 5em;
+    margin-top: 2em;
+    width: 200px;
+    height: 50px;
+    /* text-align: center; */
+    
+    }
+    .btn button{
+        padding: 8px 26px;
+       font-size: 16px;
+       font-weight: 400;
+       border-radius: 30px;
+       /* outline: none; */
+       border: 1px solid #fff;
+       background: linear-gradient(to right, #ff4e50 0%, #f9d423 100%);
+
+    }
+    .btn button a{
+        color: #fff;
+        font-size: 150%;
+    }
+    
+@media only screen and (max-width:768px) {
+    .mobile-nav{
+        margin-right: 26px;
+        display: block;
+    }
+    .desktop-nav{
+        display: none;
+        
+    }
+    .img img{
+        display: none;
+    }
+    .content{
+        text-align: center;
+        margin: auto;
+        line-height: 30px;
+        width: 300px;
+        height: 100px;
+    }
+
+    
+    .heading{
+        text-align: center;
+        margin: auto;
+
+    }
+    .heading h1{
+        font-size: 300%;
+    }
+    .btn{
+        height: 50px;
+        text-align: center;
+        margin: 25px auto;
+        line-height: 60px;
+    
+    }
+    .img2 img{
+        display: block;
+        width: 320px;
+        margin:auto;
+        height: auto;
+    }
+}
